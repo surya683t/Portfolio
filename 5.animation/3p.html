@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ball {
+            width: 150px;
+            height: 150px;
+            background-color: orangered;
+            border-radius: 50%;
+            /* animation : name duration timing-function delay iteration-count direction fill-mode */
+            animation-name: slide;
+             /* name of the keyframe */
+            animation-duration: 2s;
+            /* time to complete 1 cycle of animation */
+            animation-timing-function: ease;
+            /* timing function */
+            animation-iteration-count: infinite;
+            /* number of animation cycles */
+            animation-delay: 0s;
+            /* animation delay */
+            animation-play-state: paused;
+            /* running and paused */
+
+        }
+        @keyframes slide {
+            0% {
+                transform: translate(0,0);
+                background-color: slateblue;
+            }
+
+            30% {
+                transform: translate(20vw,70vh);
+                background-color: darkblue;
+            }
+
+            50% {
+                transform: translate(50vw, 80vh);
+                background-color: red;
+            }
+
+            80% {
+                transform: translate(80vw, 70vh);
+                background-color: rebeccapurple;
+            }
+            100% {
+                transform: translateY(100vh);
+                background-color: darkmagenta;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+
+    <div class="ball"></div>
+</body>
+</html>

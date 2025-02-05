@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            color: #fff;
+            transition: all 5s;
+         }
+
+         .b1:hover {
+            transform: scale(2, 2);
+         }
+
+         .b2:hover {
+            transform: scaleX(3.5);
+         }
+
+         .b3:hover {
+            transform: scaleY(2.6);
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Scale</h1>
+
+    <div class="container">
+        <div class="b1">block</div>
+    <div class="b2">block</div>
+    <div class="b3">block</div>
+        </div>
+
+</body>
+</html>

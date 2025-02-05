@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid slategray;
+            counter-reset: ch;
+        }
+
+        h2::before {
+            counter-increment: ch;
+            content: counter(ch) ".";
+            color: red;
+        }
+
+        h2 {
+            counter-reset: tp;
+        }
+
+        h4::before {
+            counter-increment: tp;
+            content: counter(ch) "." counter(tp) ".";
+            color: darkblue;
+            padding-left: 2rem;
+        }
+
+        h4 {
+            counter-reset: sb;
+        }
+
+        h6::before {
+            counter-increment: sb;
+            content: counter(ch) "." counter(tp) "." counter(sb) ".";
+            color:darkgreen ;
+            padding-left: 4rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HTML</h2>
+             <h4>Header tags</h4>
+             <h4>Format tags</h4>
+                  <h6>paragraph</h6>
+                  <h6>strong</h6>
+                  <h6>bold</h6>
+                  <h6>underline</h6>
+             <h4>List tags</h4>
+             <h4>Table tags</h4>
+
+        <h2>CSS</h2>
+             <h4>Selectors</h4>
+                  <h6>universal Selector</h6>
+                  <h6>class, id, html tag</h6>
+                  <h6>Pseudo-Class</h6>
+                  <h6>Pseudo-Elements</h6>
+             <h4>Background</h4>
+
+        <h2>Javascript</h2>
+             <h4>varaibles</h4>
+             <h4>Data types</h4>
+             <h4>Operators</h4>
+                 <h6>Arithmetic</h6>
+                 <h6>Logical</h6>
+                 <h6>Relational</h6>
+                 <h6>Increment/decrement</h6>
+             <h4>Conditional Statements</h4>
+        <h2>React Js</h2>
+             <h4>Real Dom v/s Virtual Dom</h4>
+             <h4>Components</h4>
+             <h4>Data Binding</h4>
+                 <h6>one way</h6>
+                 <h6>two way</h6>
+                 <h6>method binding</h6>
+        <h4>state and props</h4>
+    </div>
+</body>
+</html>

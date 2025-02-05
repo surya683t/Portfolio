@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: olivedrab;
+            color: #fff;
+            transition: all 5s;
+
+        }
+
+        .b1:hover {
+            transform: translate(200px, 100px);
+        }
+
+        .b2:hover {
+            transform: translateX(500px);
+        }
+
+        .b3:hover {
+            transform: translateY(300px);
+        }
+    </style>
+</head>
+<body>
+    <h1>transform</h1>
+
+    <!-- 
+        2d 
+           1.translate(x,y)
+            translateX(val)
+            translateY(val)
+        3d 
+            translateZ(val)    
+     -->
+            <h3>translate</h3>
+
+     <div class="b1">block1</div>
+     <div class="b2">block2</div>
+     <div class="b3">block3</div>
+     
+</body>
+</html>
